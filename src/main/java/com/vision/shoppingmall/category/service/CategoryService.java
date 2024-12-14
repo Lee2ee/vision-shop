@@ -67,4 +67,13 @@ public class CategoryService {
         category.update(request.getCategoryName());
         categoryRepository.save(category);
     }
+
+    public void delete(Long id) {
+        //1. 카테고리가 존재 하는지 확인
+        Category category = categoryRepository.findById(id)
+                .orElseThrow(CategoryNotFoundException::new);
+        //2. 카테고리 삭제
+        categoryRepository.delete(category);
+    }
+
 }

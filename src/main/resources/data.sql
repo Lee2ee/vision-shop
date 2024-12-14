@@ -50,3 +50,41 @@ INSERT INTO categories (category_name) VALUES
                                            ('법학'),
                                            ('수학'),
                                            ('물리학');
+
+
+INSERT INTO Products (
+    product_name, publisher_name, author_name, translator_name,
+    purchase_price, unit_price, discount_price, selling_price,
+    description, thumbnail_image_data, product_image_data,
+    product_status, category_id
+)
+VALUES
+    ('Spring Boot Mastery', 'TechBooks Publishing', 'John Doe', NULL,
+     25000, 30000, 5000, 25000,
+     'Comprehensive guide to mastering Spring Boot.',
+     'https://example.com/thumbnail1.jpg', 'https://example.com/product1.jpg',
+     'ACTIVE', 1),
+
+    ('React Essentials', 'Frontend Focus', 'Jane Smith', NULL,
+     22000, 28000, 6000, 22000,
+     'An essential book for React beginners and professionals.',
+     'https://example.com/thumbnail2.jpg', 'https://example.com/product2.jpg',
+     'ACTIVE', 2),
+
+    ('Java Deep Dive', 'Coding Insight', 'Alice Johnson', 'Michael Brown',
+     30000, 35000, 5000, 30000,
+     'Deep dive into Java for advanced developers.',
+     'https://example.com/thumbnail3.jpg', 'https://example.com/product3.jpg',
+     'INACTIVE', 3),
+
+    ('Python Data Science', 'Data Books Co.', 'Robert White', NULL,
+     28000, 33000, 5000, 28000,
+     'Practical approaches to data science with Python.',
+     'https://example.com/thumbnail4.jpg', 'https://example.com/product4.jpg',
+     'ACTIVE', 4),
+
+    ('Effective Communication', 'Soft Skills Press', 'Emma Green', 'Chris Black',
+     18000, 25000, 7000, 18000,
+     'Learn to communicate effectively in the workplace.',
+     'https://example.com/thumbnail5.jpg', 'https://example.com/product5.jpg',
+     'ACTIVE', 5);

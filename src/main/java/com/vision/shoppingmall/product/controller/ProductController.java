@@ -72,8 +72,8 @@ public class ProductController {
             List<CategoryResponse> categories = categoryService.getAllCategories();
             model.addAttribute("categories", categories);
 
-            ProductResponse product = productService.getProduct(id);
-            model.addAttribute("product", product);
+//            ProductResponse product = productService.getProduct(id);
+            model.addAttribute("product", request);
             return "product/product-form";
         }
         //2. 제품 수정 후 제품 목록으로 리다이렉트
